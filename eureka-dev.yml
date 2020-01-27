@@ -6,3 +6,6 @@ eureka:
     fetch-registry: false        #是否从Eureka中获取注册信息
     service-url:
       defaultZone: http://127.0.0.1:${server.port}/eureka/
+spring: 
+  rabbitmq:
+    host: 192.168.199.130
