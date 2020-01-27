@@ -1,0 +1,43 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: tensquare-web
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    tensquare-base: #基础  保证唯一即可
+      path: /base/** #配置请求URL的请求规则
+      serviceId: tensquare-base #指定Eureka注册中心中的服务id
+    tensquare-article: #文章
+      path: /article/**
+      serviceId: tensquare-article
+    tensquare-friend: #交友
+      path: /friend/**
+      serviceId: tensquare-friend
+    tensquare-gathering: #活动
+      path: /gathering/**
+      serviceId: tensquare-gathering
+    tensquare-qa: #问答
+      path: /qa/**
+      serviceId: tensquare-qa
+    tensquare-recruit: #招聘
+      path: /recruit/**
+      serviceId: tensquare-recruit
+    tensquare-search: #搜索
+      path: /search/**
+      serviceId: tensquare-search
+    tensquare-sms: #短信
+      path: /sms/**
+      serviceId: tensquare-sms
+    tensquare-spit: #吐槽
+      path: /spit/**
+      serviceId: tensquare-spit
+    tensquare-user: #用户
+      path: /user/**
+      serviceId: tensquare-user
