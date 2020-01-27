@@ -6,6 +6,8 @@ spring:
   data:
     elasticsearch:
       cluster-nodes: 192.168.199.130:9300
+  rabbitmq: 
+    host: 192.168.199.130
 eureka:
   client:
     service-url:
