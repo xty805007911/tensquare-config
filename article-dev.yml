@@ -17,6 +17,8 @@ spring:
     mongodb:
       host: 192.168.199.130
       database: recruitdb
+  rabbitmq:
+    host: 192.168.199.130
 
 eureka:
   client:
