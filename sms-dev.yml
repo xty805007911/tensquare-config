@@ -8,8 +8,8 @@ spring:
 
 aliyun:
   sms:
-    accessKeyId: LTAI4FqhwhsF6LdVHk7imVyB
-    accessKeySecret: 2v19hwnp4W1f3EV4s537nTgeyCX0mM
+    accessKeyId: LTAI4Fqh
+    accessKeySecret: 2v19hwnp4W1f3
     template_code: SMS_181863547
     sign_name: fdcp
 eureka:
